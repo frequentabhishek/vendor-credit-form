@@ -243,14 +243,17 @@ input[type="text"]:focus,
     background: #26a19a;
   }
   
-
   .two-column {
     display: flex;
     flex-direction: column;
-}
+    gap: 10px;
+  }
 
 .two-column .column {
-    flex: 1;
+  flex: 1;
+  background: #e8e8e8;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .two-column .column h2 {
