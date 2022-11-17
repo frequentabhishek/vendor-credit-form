@@ -1,0 +1,300 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------------Form Design----------------*/
+#signup {
+    height: auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.95);
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 80vh;
+    border-radius: 20px;
+    box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+}
+
+  #fieldsets {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 3px;
+}
+
+.form-group label {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.form-group .select-input {
+    position: relative;
+}
+
+.form-group input, .form-group textarea, .form-group select, .form-group .select-input .input-field {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 38px;
+}
+
+.form-group .select-input .input-field {
+    cursor: pointer;
+}
+
+.form-group .select-input ul {
+    list-style: none;
+    background: #fff;
+    padding: 5px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.form-group .select-input ul li a{
+    font-size: 14px;
+    display: block;
+    padding: 3px 10px;
+    color: var(--text);
+    text-transform: capitalize;
+}
+
+.form-group .select-input ul li a:hover{
+    background: #f4f4f4;
+}
+
+.form-group .select-input .input-field {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #777;
+    line-height: 1;
+    background: #fff;
+}
+
+.form-group .select-input .input-field .fa-caret-down {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #22918b;
+  }
+
+  fieldset {
+    border: none;
+    position: absolute;
+    left: -1140px;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    opacity: 0;
+    max-width: 1100px;
+    overflow-y: auto;
+    height: calc(100% - 90px);
+}
+  fieldset.current {
+    left: 20px;
+    opacity: 1;
+  }
+  fieldset.next {
+    left: 1140px;
+  }
+  input[type="submit"] {
+    display: none;
+    border: none;
+  }
+  #section-tabs {
+    height: 50px;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+  #section-tabs li {
+    color: var(--text);
+    cursor: not-allowed;
+    border-left: 1px solid #aaa;
+    text-decoration: none;
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+    background: #eee;
+    position: relative;
+    font-size: 0.9rem;
+}
+  #section-tabs li span {
+    color: #bababa;
+  }
+  #section-tabs li.active {
+    color: #444;
+    cursor: pointer;
+  }
+  #section-tabs li:after {
+    content: "";
+    display: block;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #section-tabs li.current {
+    opacity: 1;
+    background: #fff;
+    z-index: 999;
+    border-left: none;
+  }
+  #section-tabs li.current:after {
+    border: 15px solid transparent;
+    border-left: 15px solid var(--primary);
+  }
+  .error {
+    color: #bf2424;
+    display: block;
+  }
+  input.error,
+  textarea.error {
+    border-color: #bf2424;
+  }
+  input.error:focus,
+  textarea.error:focus {
+    border-color: #bf2424;
+  }
+  label.error {
+    margin-bottom: 20px;
+  }
+  input.valid {
+    color: green;
+  }
+  label.valid {
+    position: absolute;
+    right: 20px;
+  }
+  input + .valid,
+  textarea + .valid {
+    display: none;
+  }
+  .valid + .valid {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    margin-top: -36px;
+    color: green;
+  }
+  .btn {
+    border: none;
+    padding: 8px;
+    background: var(--primary);
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  .btn:hover {
+    background: #26a19a;
+  }
+  
+
+  .two-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.two-column .column {
+    flex: 1;
+}
+
+.two-column .column h2 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.two-column .column h2 span {
+    color: #777;
+    font-size: 14px;
+}
+
+.btn-wrapper {
+    margin-bottom: 15px;
+    margin-top: -10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.btn-wrapper .remove {
+    color: #d61919;
+}
+
+.btn-wrapper .add {
+    color: #08b708;
+}
+
+.check-input {
+    display: flex;
+    background: #fff;
+    padding: 15px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.check-input input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin-top: 6px;
+}

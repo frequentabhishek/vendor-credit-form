@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="signup" action="somewhere" method="POST">
+            <ul id="section-tabs">
+                <li class="current active">Credit</li>
+                <li>Billing</li>
+                <li>Contact</li>
+                <li>payment terms</li>
+            </ul>
+            <div id="fieldsets">
+                <fieldset class="current">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">company name</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Company country</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Company Reg. number</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Type of business</label>
+                                <div class="select-input">
+                                    <div class="input-field">
+                                        <span>please select</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Corporation</a></li>
+                                        <li><a href="javascript:void(0);">proprietorship</a></li>
+                                        <li><a href="javascript:void(0);">partnership</a></li>
+                                        <li><a href="javascript:void(0);">LLC</a></li>
+                                        <li><a href="javascript:void(0);">other</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Foundation year</label>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">employee size</label>
+                                <div class="select-input">
+                                    <div class="input-field">
+                                        <span>please select</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">2 - 10</a></li>
+                                        <li><a href="javascript:void(0);">11 - 50</a></li>
+                                        <li><a href="javascript:void(0);">51 - 200</a></li>
+                                        <li><a href="javascript:void(0);">201 - 500</a></li>
+                                        <li><a href="javascript:void(0);">501 - 1000</a></li>
+                                        <li><a href="javascript:void(0);">1001 - 5000</a></li>
+                                        <li><a href="javascript:void(0);">5001 - 10000</a></li>
+                                        <li><a href="javascript:void(0);">5000+</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Company Branches</label>
+                                <div class="select-input">
+                                    <div class="input-field">
+                                        <span>please select</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">1 - 4</a></li>
+                                        <li><a href="javascript:void(0);">5 - 10</a></li>
+                                        <li><a href="javascript:void(0);">11 - 15</a></li>
+                                        <li><a href="javascript:void(0);">16 - 20</a></li>
+                                        <li><a href="javascript:void(0);">21 - 25</a></li>
+                                        <li><a href="javascript:void(0);">25+</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="next">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">Billing Country</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">Federal Tax ID / GSTIN NO</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">phone</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">fax</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Address 1</label>
+                                <textarea cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Address 2</label>
+                                <textarea cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">State</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">city</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">zip code</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="next">
+                    <div class="two-column">
+                        <div class="column">
+                            <h2>management contact <span>(any three)</span></h2>
+                            <div class="item-list">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">salutaion</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">name</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">Designation</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">phone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">email</label>
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="btn-wrapper">
+                                            <a href="javascript:void(0);" class="add"><i class="fa-solid fa-circle-plus"></i> Add More</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">salutaion</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">name</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">Designation</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">phone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">email</label>
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="btn-wrapper">
+                                            <a href="javascript:void(0);" class="add"><i class="fa-solid fa-circle-plus"></i> Add More</a>
+                                            <a href="javascript:void(0);" class="remove"><i class="fa-solid fa-circle-xmark"></i> Remove</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h2>accounts & finance contact <span>(any two)</span></h2>
+                            <div class="item-list">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">salutaion</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">name</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">Designation</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">phone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">email</label>
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="btn-wrapper">
+                                            <a href="javascript:void(0);" class="add"><i class="fa-solid fa-circle-plus"></i> Add More</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">salutaion</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">name</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">Designation</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">phone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">email</label>
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="btn-wrapper">
+                                            <a href="javascript:void(0);" class="add"><i class="fa-solid fa-circle-plus"></i> Add More</a>
+                                            <a href="javascript:void(0);" class="remove"><i class="fa-solid fa-circle-xmark"></i> Remove</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h2>Trade references <span>(atleast three)</span></h2>
+                            <div class="item-list">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">vendor name</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">service / product</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">contact person</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">phone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">email</label>
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="btn-wrapper">
+                                            <a href="javascript:void(0);" class="add"><i class="fa-solid fa-circle-plus"></i> Add More</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">vendor name</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">service / product</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">contact person</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">phone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="">email</label>
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="btn-wrapper">
+                                            <a href="javascript:void(0);" class="add"><i class="fa-solid fa-circle-plus"></i> Add More</a>
+                                            <a href="javascript:void(0);" class="remove"><i class="fa-solid fa-circle-xmark"></i> Remove</a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="next">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">payment terms</label>
+                                <div class="select-input">
+                                    <div class="input-field">
+                                        <span>please select</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">pre payment</a></li>
+                                        <li><a href="javascript:void(0);">15 days</a></li>
+                                        <li><a href="javascript:void(0);">30 days</a></li>
+                                        <li><a href="javascript:void(0);">45 days</a></li>
+                                        <li><a href="javascript:void(0);">60 days</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="check-input">
+                                    <input type="checkbox">
+                                    <p>Payment in full is due within 30 days of the invoice date.  Additional credit may be denied (to accounts whose balances are not paid within terms) either temporarily or permanently.  Frequent Research reserves the right to charge interest at a rate of 2% daily on all balances not paid within the above stated terms.  Client shall reimburse Frequent Research for all costs and attorney fees incurred by Frequentresearch in collecting any past due charges from client.</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p>Your signature below authorizes release of all banking and credit information requested by Frequent Research. Photocopies or fax copies of this form are effective consent as the original.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">signature</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Director & Head of Operations</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Date</label>
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                             <p><strong>Please e-mail the completed form to: accounts@frequentresearch.com</strong></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </fieldset>
+                <div class="div">
+                <a class="btn" id="next">Next Section ▷</a>
+                <input type="submit" class="btn">
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js" defer></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+
+</html>
